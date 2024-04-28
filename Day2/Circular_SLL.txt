@@ -1,0 +1,19 @@
+Circular singly linked list :
+--- it is linear data structure.
+--- elements are stored at random location during runtime and accessed sequentially.
+--- elements are linked to each other, by storing the address of next node in
+    every node.
+--- To have a circular nature, last node stores the address of first node
+    as a next address (i.e. in CSLL no node's next section contains NULL).
+--- For maintaining CSLL, we can retain (store) the address of head node or
+    tail node or both.  Efficient way is maintain the address of tail node 
+    because tail->next will give address of head node.
+
+Difference between Linear SLL and Circular SLL :
+1. In Linear, last node's next must contain NULL.  Whereas in circular, last
+   node's next must contain the address of first node.
+2. In linear, maintaining address of head node is efficient.  Whereas for 
+   circular, efficient way is to maintain the address of tail node.
+3. Advantage of CSLL over Linear : if we are having address of any node of
+   CSLL then it is possible to traverse the entire linked list.  But it is
+   not possible in linear.
